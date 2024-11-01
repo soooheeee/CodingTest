@@ -16,6 +16,8 @@ n, m, v = map(int, input().split())
 #초기값을 False로 만들어 그래프를 선언
 graph =[[False] * (n+1) for _ in range(n+1)]
 
+# [False] * (n+1) 는 길이가 n+1이고, 모든 요소가 False인 리스트를 만든다.
+
 #연결된 정점을 입력
 for i in range(m) :
     x, y = map(int, input().split())
@@ -57,6 +59,5 @@ def bfs(v):
 dfs(v)
 print()
 bfs(v)
-
 
 #https://m.blog.naver.com/gluestuck/221911466341
