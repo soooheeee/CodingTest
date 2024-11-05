@@ -4,8 +4,8 @@ input = sys.stdin.readline
 # @Author: sohee
 # @Description: 브루트 포스
 # 1. 총 5가지의 도형의 경우를 다 계산하여 그 중 가장 큰 거 찾기
-# performance: O(n)
-# reference: 
+# performance: O(n*m)
+# reference: https://pythontutor.com/render.html#mode=display
 
 n, m = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(n)]  # n개의 행을 가져와야 함
